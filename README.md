@@ -17,7 +17,9 @@ A partir desses clusters, gere insights para que a empresa possa segmentar melho
 ## Conclusão
 Com base nas análises realizadas, foram encontrados 4 grupos de clientes bem distintos:
 <p align="center">
-![image](https://github.com/user-attachments/assets/fa78b1d5-8c90-4010-b856-35d4a1927d7f)
+  <img src="https://github.com/user-attachments/assets/fa78b1d5-8c90-4010-b856-35d4a1927d7f" 
+  alt="Tabela RFM para cada cluster">
+</p>
 
 1. Clientes deste cluster são os mais recentes e frequentes. Eles compram regularmente e têm um gasto médio razoável. Estes clientes podem ser considerados fiéis, que fazem compras repetidas e têm um bom histórico de gastos.
 2. Este grupo de clientes fez compras há algum tempo (cerca de 1 mês e meio atrás), mas tem uma frequência mais baixa de compras. O gasto médio também é um pouco menor, mas ainda substancial. Esses clientes podem estar em um estágio intermediário: não são recentes, mas também não estão completamente inativos.
