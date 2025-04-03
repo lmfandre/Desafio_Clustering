@@ -2,6 +2,15 @@
 Desafio apresentado como requisito para a formação no curso de Cientista de Dados pela Escola DNC. 
 
 Foram utilizadas majoritariamente as bibliotecas Pandas e SKLearn, bem como outras auxiliares. Foi feito todo o tratamento dos dados, como remoção de dados nulos e análise dos outliers e em sequência, foram testados alguns métodos de clustering mais populares. Ao final do desafio, foi realizada uma análise de cada cluster de cliente e, com base nisso, sugerida uma estratégia a ser seguida pela empresa.
+
+## Tecnologias Utilizadas
+<div <br> 
+<img src="https://img.shields.io/badge/Python-4695dd?style=for-the-badge&logo=python&logoColor=FFD43B">
+<img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white">
+<img src="https://img.shields.io/badge/Matplotlib-%232A9D8F.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+</div> 
+  
 ## Proposta
 ### Crie um modelo de análise das métricas RFV
 Você foi contratado por uma empresa de e-commerce que está buscando entender melhor o comportamento de seus clientes para personalizar as suas campanhas de marketing. Para isso, a empresa disponibilizou uma base de dados em csv contendo dados sobre clientes, produtos e transações da loja realizadas entre os anos de 2010 e 2011.
