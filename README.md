@@ -1,5 +1,6 @@
 # Desafio Clustering
-Desafio apresentado como requisito para a formação no curso de Cientista de Dados pela Escola DNC. 
+Projeto desenvolvido como parte da formação em Ciência de Dados pela Escola DNC, com o objetivo de segmentar clientes de uma base de e-commerce a partir do comportamento de compra. A análise utiliza métricas RFV (Recência, Frequência e Valor Monetário) para identificar perfis de consumidores e apoiar estratégias de marketing, retenção e reativação.
+
 
 Foram utilizadas majoritariamente as bibliotecas Pandas e SKLearn, bem como outras auxiliares. Foi feito todo o tratamento dos dados, como remoção de dados nulos e análise dos outliers e em sequência, foram testados alguns métodos de clustering mais populares. Ao final do desafio, foi realizada uma análise de cada cluster de cliente e, com base nisso, sugerida uma estratégia a ser seguida pela empresa.
 
@@ -22,6 +23,28 @@ Com base nesses dados, você precisa agrupar os clientes em clusters com base em
 - Clientes que gastam mais dinheiro em suas compras.
 
 A partir desses clusters, gere insights para que a empresa possa segmentar melhor a sua base de clientes e personalizar as suas campanhas de marketing, direcionando promoções e ofertas aos clientes com base no comportamento de compras.
+
+## Execução
+Foram realizadas etapas de tratamento, limpeza e transformação dos dados, incluindo remoção de valores nulos, duplicatas, registros inconsistentes, valores negativos e outliers relevantes.
+
+Após a preparação da base, foi criada uma tabela RFV por cliente:
+
+- **Recency:** há quantos dias o cliente realizou sua última compra;
+- **Frequency:** quantidade de pedidos realizados;
+- **Monetary:** valor médio gasto por pedido.
+
+Como as variáveis apresentavam escalas diferentes e forte presença de valores extremos, foi aplicado tratamento por *clipping* no percentil 95 e padronização dos dados antes da modelagem.
+
+## Técnicas Aplicadas
+Foram testadas diferentes abordagens de clusterização, incluindo:
+
+- **K-Means**, com análise do número ideal de clusters pelo método do cotovelo;
+- **Agglomerative Clustering**, para comparação com uma abordagem hierárquica;
+- **Gaussian Mixture Model**, avaliado com base no critério BIC;
+- Métricas de avaliação como **Silhouette Score**, **Davies-Bouldin Score** e **Calinski-Harabasz Score**;
+- Visualização dos grupos em gráfico 3D com `Plotly`.
+
+Apesar de algumas análises sugerirem diferentes quantidades de grupos, o modelo final utilizou **K-Means com 4 clusters**, por gerar uma segmentação mais clara, interpretável e útil para tomada de decisão.
 
 ## Conclusão
 Com base nas análises realizadas, foram encontrados 4 grupos de clientes bem distintos:
